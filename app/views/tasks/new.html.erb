@@ -2,8 +2,8 @@
 
 <%= form_with model: @task do |f| %>
   <%= f.label :title %>
-  <%= f.text_field :title %>
+  <%= f.text_field :title, required: true %>
   <%= f.label :details %>
-  <%= f.text_field :details %>
+  <%= f.text_field :details, required: true %>
   <%= f.submit %>
 <% end %>
